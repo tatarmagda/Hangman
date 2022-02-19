@@ -9,6 +9,8 @@ class Example extends StatelessWidget {
   Widget build(BuildContext context) {
     var _width = Provider.of<ExampleProvider>(context).width;
     var _heigt = Provider.of<ExampleProvider>(context).heigt;
+    var _color = Provider.of<ExampleProvider>(context).color;
+
     print("reload");
     return Column(
       children: [
@@ -16,7 +18,7 @@ class Example extends StatelessWidget {
           duration: Duration(
             milliseconds: 250,
           ),
-          color: Colors.yellow,
+          color: _color,
           width: _width,
           height: _heigt,
         ),
