@@ -6,7 +6,7 @@ class Example extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _width = 100.0;
-    var _height = 100.0;
+    var _heigt = 100.0;
 
     return Column(
       children: [
@@ -16,7 +16,7 @@ class Example extends StatelessWidget {
           ),
           color: Colors.yellow,
           width: _width,
-          height: _height,
+          height: _heigt,
         ),
       ],
     );
