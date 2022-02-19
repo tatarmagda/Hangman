@@ -14,12 +14,12 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Provider.of<ExampleProvider>(context).heigt =
+            Provider.of<ExampleProvider>(context, listen: false).heigt =
                 Random().nextInt(350).toDouble();
-            Provider.of<ExampleProvider>(context).width =
+            Provider.of<ExampleProvider>(context, listen: false).width =
                 Random().nextInt(350).toDouble();
           },
-          icon: const Icon(Icons.star),
+          icon: const Icon(Icons.change_history),
         ),
       ),
       body: const Example(),
