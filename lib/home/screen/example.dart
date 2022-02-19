@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hangman/home/provider/example_provider.dart';
+import 'package:provider/provider.dart';
 
 class Example extends StatelessWidget {
   const Example({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var _width = 100.0;
-    var _heigt = 100.0;
-
+    var _width = Provider.of<ExampleProvider>(context).width;
+    var _heigt = Provider.of<ExampleProvider>(context).heigt;
+    print("reload");
     return Column(
       children: [
         AnimatedContainer(
